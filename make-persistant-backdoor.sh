@@ -30,5 +30,5 @@ cat > $plistFile << EOF
 EOF
 
 # Add to launchctl
-launchctl unload $plistFile
+launchctl unload $plistFile 2>/dev/null
 launchctl load $plistFile
